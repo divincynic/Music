@@ -1,0 +1,75 @@
+body {
+    background-color: black;
+    margin: 0; /* Reset body margin */
+}
+.header-container {
+    display: flex; /* Use flexbox for layout */
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 20px;
+}
+h1 {
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.albums, .songs, .artists {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    padding: 40px;
+    height: clamp(100px, 6vw, 200px);
+    margin-bottom: clamp(10px, 4vw, 50px); /* Margin between sections adjusts */
+}
+.images {
+    display: flex; /* Align images in a row */
+    align-items: center;
+    gap: clamp(10px, 2.5vw, 100px);
+    margin-left: clamp(10px, 2.5vw, 100px);
+    flex-wrap: nowrap;
+}
+.albums {
+    background-color:rgb(204, 0, 41);
+}
+.songs {
+    background-color: darkmagenta;
+}
+.image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-width: clamp(100px, 6vw, 1000px);
+}
+.artists {
+    background-color: navy;
+}
+h2 {
+    font-size: 35px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+h4 {
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(172, 237, 237);
+    margin: 0 30px;
+}
+.h4container {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    height: 300px;
+}
